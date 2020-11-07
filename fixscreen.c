@@ -4,8 +4,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <sys/ioctl.h>
 #include <linux/fb.h>
+#include <sys/ioctl.h>
 
 int main(void)
 {
