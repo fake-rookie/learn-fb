@@ -24,12 +24,12 @@ int main(void)
 
         close(fbfd);
 
-#define printcolor(color)                                               \
-        printf(#color"\t: offset=%u, \tlength=%u, \tmsb_right=%u\n",      \
+#define printcolor(color)                                            \
+        printf(#color"\t: offset=%u, \tlength=%u, \tmsb_right=%u\n", \
                varinfo.color.offset, varinfo.color.length, varinfo.color.msb_right)
 
-        printf("xres\t\t=%u \tyres\t\t=%u\n", varinfo.xres, varinfo.yres);
-        printf("xoffset\t\t=%u \tyoffset\t\t=%u\n", varinfo.xoffset, varinfo.yoffset);
+        printf("x_res   \t=%u \ty_res   \t=%u\n", varinfo.xres, varinfo.yres);
+        printf("x_offset\t=%u \ty_offset\t=%u\n", varinfo.xoffset, varinfo.yoffset);
 
         printcolor(red);
         printcolor(green);
